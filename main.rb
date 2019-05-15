@@ -1,9 +1,9 @@
 def puts_git(cmd)
   puts `git #{cmd} -h`
-  menu
+  start_here
 end
 
-def menu
+def start_here
   puts '1: Enter git command'
   puts '2: Exit'
   choice = gets.to_i
@@ -20,4 +20,4 @@ def menu
   end
 end
 
-menu
+start_here
